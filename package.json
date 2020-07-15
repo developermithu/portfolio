@@ -1,0 +1,15 @@
+{
+  "name": "modern_portfolio",
+  "version": "1.0.0",
+  "description": "modern_portfolio by Mithu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"sass ./asset/sass/index.scss style.css --watch"
+  },
+  "author": "Mithu",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.8"
+  }
+}

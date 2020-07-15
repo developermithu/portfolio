@@ -1,0 +1,108 @@
+@import url("./_font.scss");
+/*=============  GLOBAL CSS  ============*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "domine", cursive;
+  color: #fff;
+}
+
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "roboto", cursive;
+}
+
+.easeOut, a {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/*=============  Navigation  ============*/
+.secondary-text {
+  color: #18d26e !important;
+}
+
+header {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: #040b14;
+  z-index: 999;
+}
+header .header-top {
+  text-align: center;
+}
+header .header-top img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #18d26e;
+}
+header .header-top .social-icon span {
+  margin: 5px;
+}
+header .header-top .social-icon span a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #212431;
+  display: inline-block;
+  color: #18d26e;
+}
+header .header-top .social-icon span a:hover {
+  background: #18d26e;
+  color: #fff;
+}
+header .header-top .social-icon span a i {
+  margin-top: 10px;
+}
+header nav {
+  border-bottom: 1px solid #18d26e;
+}
+header nav ul li {
+  margin: 18px 0;
+}
+header nav ul li a {
+  font-size: 20px;
+  font-family: "roboto", cursive;
+  font-weight: 300;
+  color: #bbb !important;
+}
+header nav ul li a:hover {
+  color: #fff !important;
+}
+header nav ul li a:hover i {
+  color: #18d26e !important;
+}
+header footer a:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */

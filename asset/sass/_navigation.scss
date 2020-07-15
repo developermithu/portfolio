@@ -1,0 +1,78 @@
+/*=============  Navigation  ============*/
+.secondary-text {
+  color: $secondary-color !important;
+}
+
+header {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: $primary-color;
+  z-index: 999;
+
+  .header-top {
+    text-align: center;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid $secondary-color;
+    }
+
+    .social-icon {
+      span {
+        margin: 5px;
+        a {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: #212431;
+          display: inline-block;
+          color: $secondary-color;
+
+          &:hover {
+            background: $secondary-color;
+            color: #fff;
+          }
+
+          i {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    border-bottom: 1px solid $secondary-color;
+    ul {
+      li {
+        margin: 18px 0;
+        a {
+          font-size: 20px;
+          font-family: $roboto;
+          font-weight: 300;
+          color: #bbb !important;
+
+          &:hover {
+            color: #fff !important;
+          }
+          &:hover i {
+            color: $secondary-color !important;
+          }
+          i {
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    a {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
