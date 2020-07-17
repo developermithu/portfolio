@@ -18,7 +18,7 @@
       <div class="header-top py-2">
         <div class="header-img my-2">
           <img
-            src="./asset/vendor/img/profile3.jpg "
+            src="./asset/vendor/img/profile5.jpg "
             alt="logo"
             class="img-fluid"
           />
@@ -43,7 +43,7 @@
       </div>
       <!-- navbar -->
       <nav>
-        <ul class="ml-4">
+        <ul class="ml-4 mb-5">
           <li>
             <a href="#"
               ><span class="active"><i class="fas fa-home"></i></span>&nbsp;
@@ -70,16 +70,91 @@
         </ul>
       </nav>
       <!---------------  Footer Section ---------------->
-      <footer class="text-center mt-3">
-        <div>&copy; Copyright 2020.All Rights Reserved</div>
+      <footer class="text-center mt-2 font-size-14">
+        <div>
+          &copy; Copyright 2020. All Rights Reserved
+        </div>
         <div>Designed by <a href="#" class="secondary-text">Mithu</a></div>
       </footer>
       <!---------------  Footer Section ---------------->
     </header>
     <!-- Header Section -->
 
-    <!-- js -->
+    <!---------------------- Main Section ------------------>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="Home">
+        <div class="hero-title">
+          <h1>Mithu Das</h1>
+          <h3>I'm <span id="typed"></span></h3>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section py-5 px-2" id="About">
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+          recusandae natus commodi ullam et adipisci? Obcaecati, maxime, quis
+          voluptates ut nulla, deserunt quae consequuntur optio ea cum rerum
+          neque in magni sequi quibusdam. Maxime rerum natus quas quaerat, !
+        </p>
+        <div class="row py-2">
+          <div class="col-md-4">
+            <div class="about-img mt-2">
+              <img
+                src="./asset/vendor/img/profile.jpg"
+                alt="Photo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h2>Web Designer & Developer</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae facere voluptas  corrupti optio incidunt, molestias.</p>
+            <div class="row">
+              <div class="col-md-6">
+              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Birthday : </b>21 November 1997</p>
+              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Website : </b>21 www.mithu.pro</p>
+              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Phone : </b>+8801811797089</p>
+              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Address : </b>Sylhet, Bangladesh</p>
+              
+              <div class="mybtn "><a href="#">Download Cv</a></div>
+              </div>
+              
+              <div class="col-md-6">
+                <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Age : </b>22</p>
+              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Degree : </b>Bachelor of Science</p>
+              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Email : </b>www.mithudas77@gmail.com</p>
+              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Freelance : </b>Available</p>
+
+              <div class="mybtn "><a href="#">Hire Me</a></div>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+    <!---------------------- Main Section ------------------>
+
+    <!-----------------------  javascript  ---------------------->
     <script src="./asset/vendor/js/jquery-3.4.1.min.js"></script>
     <script src="./asset/vendor/js/bootstrap.min.js"></script>
+    <script src="./asset/vendor/js/typed.js"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: [
+          "Web Designer",
+          "Web Developer",
+          "Wordpress Designer",
+          "Freelancer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+/*=============  Main CSS  ============*/
+header {
+  width: 25%;
+  float: left;
+}
+
+main {
+  width: 75%;
+  float: right;
+
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba($secondary-color, 0.3),
+        rgba($secondary-color, 0.3)
+      ),
+      url("/asset/vendor/img/profile5.jpg");
+    background-size: cover;
+    background-position: 12%;
+    background-attachment: fixed;
+
+    .hero-title {
+      position: absolute;
+      top: 40%;
+      left: 66%;
+      transform: translate(-38%, -30%);
+      color: rgb(68, 58, 57);
+
+      span {
+        border-bottom: 2px solid $tertiary-color;
+        color: #fff;
+      }
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+.mybtn{
+  @include mybtn;
+}

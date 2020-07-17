@@ -1,9 +1,15 @@
 @import url("./_font.scss");
 
+@import "variable";
+
 @import "global";
 
-@import "variable";
+@import "typography";
 
 @import "mixin";
 
 @import "navigation";
+
+@import "main";
+
+@import "responsive";

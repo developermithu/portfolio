@@ -1,0 +1,30 @@
+/*=============  Media Query  ============*/
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .hero-title {
+    top: 50% !important;
+    left: 40% !important;
+    transform: translate(-50%, -50%) !important;
+
+    h1 {
+      font-size: 55px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 320px) {
+}
