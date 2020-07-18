@@ -1,0 +1,293 @@
+@import url("./_font.scss");
+/*=============  GLOBAL CSS  ============*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "domine", cursive;
+  overflow-x: hidden;
+}
+
+header {
+  color: #fff;
+}
+
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "roboto", cursive;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: " ";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  bottom: 0;
+  top: 38px;
+  background: #18d26e;
+}
+
+/*=============  Typography CSS  ============*/
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-26 {
+  font-size: 26px;
+}
+
+.font-size-28 {
+  font-size: 28px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-32 {
+  font-size: 32px;
+}
+
+.font-size-36 {
+  font-size: 36px;
+}
+
+.secondary-text {
+  color: #18d26e !important;
+}
+
+.secondary-bg {
+  background: #18d26e !important;
+}
+
+.easeOut, a {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/*=============  Navigation  ============*/
+header {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: #040b14;
+  z-index: 999;
+}
+header .header-top {
+  text-align: center;
+}
+header .header-top .header-img {
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-top .header-img::after {
+  content: " ";
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px dashed #18d26e;
+  animation: animateMe 10s linear infinite;
+}
+@keyframes animateMe {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+header .header-top .header-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+header .header-top .social-icon span {
+  margin: 5px;
+}
+header .header-top .social-icon span a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #212431;
+  display: inline-block;
+  color: #18d26e;
+}
+header .header-top .social-icon span a:hover {
+  background: #18d26e;
+  color: #fff;
+}
+header .header-top .social-icon span a i {
+  margin-top: 10px;
+}
+header nav {
+  border-bottom: 1px solid #18d26e;
+}
+header nav ul li {
+  margin: 18px 0;
+}
+header nav ul li a {
+  font-size: 20px;
+  font-family: "roboto", cursive;
+  font-weight: 300;
+  color: #bbb !important;
+}
+header nav ul li a:hover {
+  color: #fff !important;
+}
+header nav ul li a:hover i {
+  color: #18d26e !important;
+}
+header footer a:hover {
+  opacity: 0.7;
+}
+
+/*=============  Main CSS  ============*/
+header {
+  width: 25%;
+  float: left;
+}
+
+main {
+  width: 75%;
+  float: right;
+}
+main .hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(24, 210, 110, 0.3), rgba(24, 210, 110, 0.3)), url("/asset/vendor/img/profile5.jpg");
+  background-size: cover;
+  background-position: 12%;
+  background-attachment: fixed;
+}
+main .hero-section .hero-title {
+  position: absolute;
+  top: 40%;
+  left: 66%;
+  transform: translate(-38%, -30%);
+  color: #443a39;
+}
+main .hero-section .hero-title span {
+  border-bottom: 2px solid #149ddd;
+  color: #fff;
+}
+main .hero-section .hero-title h1 {
+  font-size: 70px;
+}
+main .skill-section h6 {
+  font-size: 14px;
+}
+main .skill-section .progress {
+  height: 8px;
+  border-radius: 0;
+}
+main .service-section {
+  background: #f1f1f1;
+}
+main .service-section .box {
+  border: 1px solid #18d26e;
+  padding: 25px 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+main .service-section .box::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background: #18d26e;
+  transition: 0.5s;
+  z-index: -2;
+}
+main .service-section .box:hover::before {
+  height: 100%;
+  border-radius: 5px;
+}
+main .service-section .box .box-content {
+  font-size: 14px;
+}
+
+/*=============  Media Query  ============*/
+@media screen and (max-width: 1024px) {
+  header {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .hero-title {
+    top: 50% !important;
+    left: 40% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  .hero-title h1 {
+    font-size: 55px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

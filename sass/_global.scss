@@ -5,32 +5,26 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "domine", cursive;
+  overflow-x: hidden;
 }
-
 header {
   color: #fff;
 }
-
 li {
   list-style: none !important;
 }
-
 a {
   text-decoration: none !important;
   @extend .easeOut;
 }
-
 a:hover {
   cursor: pointer;
 }
-
 h1,
 h2,
 h3,
@@ -38,4 +32,16 @@ h4,
 h5,
 h6 {
   font-family: "roboto", cursive;
+}
+.underline {
+  position: relative;
+}
+.underline::before {
+  content: " ";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  bottom: 0;
+  top: 38px;
+  background: $secondary-color;
 }

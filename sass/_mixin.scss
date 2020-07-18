@@ -6,7 +6,6 @@
   transition: all 0.5s ease-out;
 }
 
-
 //  @mixin easeOut() ; //
 
 @mixin transform($property) {
@@ -23,4 +22,3 @@
   -o-transition: $value;
   transition: $value;
 }
-
