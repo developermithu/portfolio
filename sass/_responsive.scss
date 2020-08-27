@@ -2,6 +2,10 @@
 
 /*=========  Small Leftop  ========*/
 @media screen and (max-width: 1024px) {
+  .mobileMenu{
+    display: block;
+  }
+
   header {
     display: none;
   }

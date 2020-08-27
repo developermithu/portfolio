@@ -251,10 +251,7 @@ header nav {
   padding-top: 15px;
 }
 header nav ul li {
-  margin: 18px 0;
-}
-header nav ul li:last-child {
-  margin-bottom: 80px;
+  margin: 15px 0;
 }
 header nav ul li a {
   font-size: 20px;
@@ -270,6 +267,128 @@ header nav ul li a:hover i {
 }
 header .header-footer a:hover {
   opacity: 0.7;
+}
+
+/*=============  Mobile Menu  ============*/
+.mobileMenu {
+  display: none;
+}
+.mobileMenu .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.mobileMenu .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  color: #fff;
+}
+.mobileMenu .sidenav .header-top {
+  text-align: center;
+}
+.mobileMenu .sidenav .header-top .header-title a {
+  color: #fff;
+}
+.mobileMenu .sidenav .header-top .header-img {
+  width: 100%;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobileMenu .sidenav .header-top .header-img::after {
+  content: " ";
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px dashed #18d26e;
+  -webkit-animation: animateMe 10s linear infinite;
+  animation: animateMe 10s linear infinite;
+}
+@-webkit-keyframes animateMe {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+@keyframes animateMe {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+.mobileMenu .sidenav .header-top .header-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.mobileMenu .sidenav .header-top .social-icon span {
+  margin: 5px;
+}
+.mobileMenu .sidenav .header-top .social-icon span a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #212431;
+  display: inline-block;
+  color: #18d26e;
+}
+.mobileMenu .sidenav .header-top .social-icon span a:hover {
+  background: #18d26e;
+  color: #fff;
+}
+.mobileMenu .sidenav .header-top .social-icon span a i {
+  margin-top: 10px;
+}
+.mobileMenu .sidenav nav {
+  padding-top: 25px;
+}
+.mobileMenu .sidenav nav ul {
+  margin-left: 60px;
+}
+.mobileMenu .sidenav nav ul li {
+  margin: 18px 0;
+}
+.mobileMenu .sidenav nav ul li:last-child {
+  margin-bottom: 80px;
+}
+.mobileMenu .sidenav nav ul li a {
+  font-size: 20px;
+  font-family: "roboto", cursive;
+  font-weight: 300;
+  color: #bbb !important;
+}
+.mobileMenu .sidenav nav ul li a:hover {
+  color: #fff !important;
+}
+.mobileMenu .sidenav nav ul li a:hover i {
+  color: #18d26e !important;
+}
+.mobileMenu .openNav {
+  position: fixed;
+  top: 5px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 35px;
+  z-index: 3;
+}
+.mobileMenu .openNav span {
+  color: #000;
 }
 
 /*=============  Main CSS  ============*/
@@ -540,6 +659,10 @@ main .contact-section .contact-box2 form button {
 /*=============  Media Query  ============*/
 /*=========  Small Leftop  ========*/
 @media screen and (max-width: 1024px) {
+  .mobileMenu {
+    display: block;
+  }
+
   header {
     display: none;
   }

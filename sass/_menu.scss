@@ -1,0 +1,147 @@
+/*=============  Mobile Menu  ============*/
+.mobileMenu {
+  display: none;
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+   .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px ;
+      font-size: 50px;
+     color: #fff;
+    }
+
+    .header-top {
+        text-align: center;
+    
+        .header-title{
+          a{
+            color: #fff;
+          }
+        }
+    
+        .header-img {
+          width: 100%;
+          border-radius: 50%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    
+          &::after {
+            content: " ";
+            position: absolute;
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px dashed $secondary-color;
+            -webkit-animation: animateMe 10s linear infinite;
+                    animation: animateMe 10s linear infinite;
+    
+            @-webkit-keyframes animateMe {
+              0% {
+                transform: scale(1) rotate(0deg);
+              }
+              100% {
+                transform: scale(1) rotate(360deg);
+              }
+            }
+    
+            @keyframes animateMe {
+              0% {
+                transform: scale(1) rotate(0deg);
+              }
+              100% {
+                transform: scale(1) rotate(360deg);
+              }
+            }
+          }
+    
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+          }
+        }
+    
+        .social-icon {
+          span {
+            margin: 5px;
+            a {
+              width: 36px;
+              height: 36px;
+              border-radius: 50%;
+              background: #212431;
+              display: inline-block;
+              color: $secondary-color;
+    
+              &:hover {
+                background: $secondary-color;
+                color: #fff;
+              }
+    
+              i {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      nav {
+        padding-top: 25px;
+        ul {
+            margin-left: 60px;
+          li {
+            margin: 18px 0;
+            &:last-child{
+              margin-bottom:80px ;
+            }
+            
+            a {
+              font-size: 20px;
+              font-family: $roboto;
+              font-weight: 300;
+              color: #bbb !important;
+    
+              &:hover {
+                color: #fff !important;
+              }
+              &:hover i {
+                color: $secondary-color !important;
+              }
+              i {
+              }
+            }
+          }
+        }
+      }
+    
+
+  }
+
+  .openNav {
+    position: fixed;
+    top: 5px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 35px;
+  z-index: 3;
+    span {
+      color: #000;
+    }
+  }
+}
+
+
