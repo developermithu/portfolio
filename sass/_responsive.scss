@@ -1,7 +1,6 @@
 /*=============  Media Query  ============*/
-@media screen and (max-width: 1440px) {
-}
 
+/*=========  Small Leftop  ========*/
 @media screen and (max-width: 1024px) {
   header {
     display: none;
@@ -11,20 +10,144 @@
   }
   .hero-title {
     top: 50% !important;
-    left: 40% !important;
+    left: 20% !important;
     transform: translate(-50%, -50%) !important;
-
     h1 {
       font-size: 55px !important;
     }
   }
 }
 
+/*=========  Tablet Device  ========*/
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  .hero-title {
+    top: 50% !important;
+    left: 22% !important;
+    h1 {
+      font-size: 48px !important;
+    }
+  }
+
+  .location,
+  .email,
+  .call,
+  .website {
+    margin: 18px !important;
+  }
+
+  .about-img {
+    width: 50%;
+    margin: -25px auto;
+    margin-bottom: -76px;
+  }
+
+  main .about-section .about-btn {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .counter-section .col-sm-6:nth-child(3),
+  .counter-section .col-sm-6:nth-child(4) {
+    margin-top: 15px;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .scroll-up-btn {
+    bottom: 12px;
+    right: 12px;
+  }
 }
 
+/*=========  Large Mobile  ========*/
 @media screen and (max-width: 480px) {
+  .hero-title {
+    top: 38% !important;
+    left: 30% !important;
+    h1 {
+      font-size: 44px !important;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
+  .counter-section .col-sm-6 {
+    margin: 10px 0;
+  }
+  .about-img {
+    margin-bottom: -50px;
+  }
+
+  .contact-box2 {
+    margin-top: 15px;
+  }
+  .contact-box1 {
+    margin-left: 0px !important;
+  }
 }
 
+/*=========  Small Mobile  ========*/
 @media screen and (max-width: 320px) {
+  html {
+    font-size: 75%;
+  }
+  .footer {
+    font-size: 11px;
+  }
+
+  .hero-section {
+    background-position: center !important;
+    background-attachment: fixed;
+    .hero-title {
+      top: 10% !important;
+      left: 38% !important;
+      h1 {
+        font-size: 34px !important;
+      }
+      h3 {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  .about-section .p1 {
+    margin: 25px 0;
+  }
+
+  .about-img {
+    margin-bottom: -25px !important;
+  }
+
+  .skill-section {
+    h6 {
+      font-size: 11px !important;
+    }
+
+    .progress {
+      height: 4px !important;
+    }
+  }
+
+  .service-section h5 {
+    margin-top: 8px !important;
+  }
+
+  .contact-box1 {
+ span{
+   font-size: 15px !important;
+ }
+      a {
+        width: 35px !important;
+        height: 35px !important;
+        i {
+          margin-top: 12px !important;
+        }
+      }
+  }
 }

@@ -4,343 +4,572 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Modern_Portfolio By Mithu</title>
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="./asset/all.css" />
-    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+    <title>Mithu Das - A Full-Stack Webdeveloper</title>
 
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./asset/all.css" />
+    <link rel="stylesheet" href="./asset/css/aos.css" />
+    <!-- Browser Support -->
+    <link rel="stylesheet" href="./asset/css/normalize.css" />
     <!-- custom css -->
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <!-- Mobile Menu -->
+    <!-- Mobile Menu -->
+
     <!-- Header Section -->
-    <header>
+    <header class="header">
       <div class="header-top py-2">
-        <div class="header-img my-2">
-          <img
-            src="./asset/vendor/img/profile5.jpg "
-            alt="logo"
-            class="img-fluid"
-          />
+     <a href="index.html">
+      <div class="header-img my-2" data-aos="fade-in" data-aos-delay="100">
+        <img
+          src="./asset/vendor/img/profile5-sm.jpg "
+          alt="logo"
+          class="img-fluid"
+      />
+    </div>
+     </a>
+        <div class="header-title" data-aos="fade-in" data-aos-delay="200">
+          <a href="index.html"><h3>Mithu <span class="secondary-text">Das</span></h3></a>
         </div>
-        <div class="header-title">
-          <h3>Mithu <span class="secondary-text">Das</span></h3>
-        </div>
-        <div class="social-icon">
+        <div class="social-icon" data-aos="fade-in" data-aos-delay="300">
           <span
-            ><a href="#"><i class="fab fa-facebook-f"></i></a
+            ><a href="#"><i class="fab fa-facebook-f" target="blank"></i></a
           ></span>
           <span
-            ><a href="#"><i class="fab fa-twitter"></i></a
+            ><a href="#"><i class="fab fa-twitter" target="blank"></i></a
           ></span>
           <span
-            ><a href="#"><i class="fab fa-youtube"></i></a
+            ><a href="#"><i class="fab fa-youtube" target="blank"></i></a
           ></span>
           <span
-            ><a href="#"><i class="fab fa-instagram"></i></a
+            ><a href="#"><i class="fab fa-instagram" target="blank"></i></a
           ></span>
         </div>
       </div>
       <!-- navbar -->
       <nav>
         <ul class="ml-4 mb-5">
-          <li>
+          <li data-aos="fade-right" data-aos-delay="400">
             <a href="#"
               ><span class="active"><i class="fas fa-home"></i></span>&nbsp;
               Home</a
             >
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="500">
             <a href="#"><i class="fas fa-user"></i> &nbsp;About</a>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="600">
             <a href="#skill"><i class="fas fa-file-alt"></i> &nbsp; Resume</a>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="700">
             <a href="#">
               <i class="fas fa-user-graduate"></i> &nbsp; Portfolio</a
             >
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-delay="800">
             <a href="#services"><i class="fas fa-server"></i> &nbsp;Services</a>
           </li>
-          <li>
-            <a href="#"><i class="fas fa-envelope"></i> &nbsp;Contact</a>
+          <li data-aos="fade-right" data-aos-delay="100">
+            <a href="#contact"><i class="fas fa-envelope"></i> &nbsp;Contact</a>
           </li>
         </ul>
       </nav>
-      <!---------------  Footer Section ---------------->
-      <footer class="text-center mt-2 font-size-14">
+
+      <!-- Footer Section -->
+      <div class="header-footer text-center font-size-14 mt-2">
+        <div>&copy; Copyright 2020. All Rights Reserved</div>
         <div>
-          &copy; Copyright 2020. All Rights Reserved
+          Designed by
+          <a href="#" class="secondary-text" target="blank">Mithu</a>
         </div>
-        <div>Designed by <a href="#" class="secondary-text">Mithu</a></div>
-      </footer>
-      <!---------------  Footer Section ---------------->
+      </div>
+      <!--  Footer Section -->
     </header>
     <!-- Header Section -->
 
-    <!---------------------- Main Section ------------------>
+    <!-- Main Section -->
     <main>
       <!-- Hero Section -->
       <section class="hero-section" id="Home">
+        <div class="wrapper"></div>
         <div class="hero-title">
-          <h1>Mithu Das</h1>
+          <h1>Mithu <span>Das</span></h1>
           <h3>I'm <span id="typed"></span></h3>
         </div>
       </section>
 
       <!-- About Section -->
       <section class="about-section py-5 px-2" id="About">
-        <h2 class="underline">About me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-          recusandae natus commodi ullam et adipisci? Obcaecati, maxime, quis
-          voluptates ut nulla, deserunt quae consequuntur optio ea cum rerum
-          neque in magni sequi quibusdam. Maxime rerum natus quas quaerat, !
-        </p>
+        <div data-aos="fade-right" data-aos-delay="100">
+          <h2 class="underline">About me</h2>
+          <p class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            recusandae natus commodi ullam et adipisci? Obcaecati, maxime, quis
+            voluptates ut nulla, deserunt quae consequuntur optio ea cum rerum
+            neque in magni sequi quibusdam. Maxime rerum natus quas quaerat, !
+          </p>
+        </div>
         <div class="row py-2">
-          <div class="col-md-4">
-            <div class="about-img mt-2">
+          <div class="col-md-4 col-sm-12">
+            <div
+              class="about-img mt-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
               <img
-                src="./asset/vendor/img/profile.jpg"
+                src="./asset/vendor/img/pc.png"
                 alt="Photo"
                 class="img-fluid"
               />
             </div>
           </div>
-          <div class="col-md-8">
-            <h2>Web Designer & Developer</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae facere voluptas  corrupti optio incidunt, molestias.</p>
-            <div class="row">
-              <div class="col-md-6">
-              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Birthday : </b>21 November 1997</p>
-              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Website : </b>21 www.mithu.pro</p>
-              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Phone : </b>+8801811797089</p>
-              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Address : </b>Sylhet, Bangladesh</p>
-              
-              <div class="mybtn "><a href="#">Download Cv</a></div>
+          <div class="col-md-8 col-sm-12">
+            <div data-aos="fade-left" data-aos-delay="200">
+              <h2>Web Designer & Developer</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repudiandae facere voluptas corrupti optio incidunt, molestias.
+              </p>
+            </div>
+            <div class="row" data-aos="fade-left" data-aos-delay="200">
+              <div class="col-md-6 col-sm-6">
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Birthday : </b>21 November 1997
+                </p>
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Website : </b>21 www.mithu.pro
+                </p>
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Phone : </b>+8801811797089
+                </p>
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Address : </b>Sylhet, Bangladesh
+                </p>
               </div>
-              
-              <div class="col-md-6">
-                <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Age : </b>22</p>
-              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Degree : </b>Bachelor of Science</p>
-              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Email : </b>www.mithudas77@gmail.com</p>
-              <p><span><i class="fas fa-chevron-right"></i></span>&nbsp; <b>Freelance : </b>Available</p>
 
-              <div class="mybtn "><a href="#">Hire Me</a></div>
+              <div class="col-md-6 col-sm-6">
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Age : </b>22
+                </p>
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Degree : </b>Bachelor of Science
+                </p>
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Email : </b>www.mithudas77@gmail.com
+                </p>
+                <p>
+                  <span><i class="fas fa-chevron-right"></i></span>&nbsp;
+                  <b>Freelance : </b>Available
+                </p>
               </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div
+                  class="mt-3 about-btn"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                >
+                  <a href="asset/cv/blooger.pdf" class="mybtn"
+                    >Download Cv &nbsp;<span
+                      ><i class="fas fa-file-download"></i></span
+                  ></a>
+                  <a href="#" class="mybtn ml-3">Hire me</a>
+                </div>
               </div>
             </div>
           </div>
-          
         </div>
       </section>
       <!-- Counterup Section -->
-      <div class="counter-section bg-info py-5 px-2">
-        <div class="row py-4 text-center">
-          <div class="col-md-3">
-            <i class="fas fa-smile fa-2x mb-2">&nbsp; &nbsp;<span class="number">32</span></i>
+      <div
+        class="counter-section py-5 px-2"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <div class="row py-md-4 text-center">
+          <div class="col-md-3 col-sm-6">
+            <i class="fas fa-smile fa-2x mb-2 text-danger"
+              >&nbsp; &nbsp;<span class="number">11</span></i
+            >
             <h5>Project Completed</h5>
           </div>
-          <div class="col-md-3">
-            <i class="fas fa-smile fa-2x mb-2">&nbsp; &nbsp;<span class="number">126</span></i>
+          <div class="col-md-3 col-sm-6">
+            <i class="fas fa-heart fa-2x mb-2 text-danger"
+              >&nbsp; &nbsp;<span class="number">126</span></i
+            >
             <h5>Project Completed</h5>
           </div>
-          <div class="col-md-3">
-            <i class="fas fa-smile fa-2x mb-2">&nbsp; &nbsp;<span class="number">54</span></i>
+          <div class="col-md-3 col-sm-6">
+            <i class="fas fa-user-friends fa-2x mb-2 text-danger"
+              >&nbsp; &nbsp;<span class="number">54</span></i
+            >
             <h5>Project Completed</h5>
           </div>
-          <div class="col-md-3">
-            <i class="fas fa-smile fa-2x mb-2">&nbsp; &nbsp;<span class="number">99</span></i>
-            <h5>Project Completed</h5>
+          <div class="col-md-3 col-sm-6">
+            <i class="fas fa-moon fa-2x mb-2 text-danger"
+              >&nbsp; &nbsp;<span class="number">78</span></i
+            >
+            <h5>Sleepless Night</h5>
           </div>
         </div>
       </div>
       <!-- Counterup Section -->
-
       <!-- Skill Section -->
       <section class="skill-section py-4 px-2" id="skill">
         <h3 class="underline">My Skill</h3>
         <div class="mt-5 px-5">
-
           <div class="d-flex justify-content-between">
-            <h6>HTML5</h6> 
-          <h6>95%</h6>
+            <h6>HTML5</h6>
+            <h6>95%</h6>
           </div>
-          <div class="progress mb-2"> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated secondary-bg text-right" role="progressbar"
-                style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>CSS3 & SASS</h6> 
-        <h6>90%</h6>
-        </div>
-          <div class="progress mb-2"> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated secondary-bg text-right" role="progressbar"
-                style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>javascript</h6> 
-        <h6>65%</h6>
-        </div>
-          <div class="progress mb-2"> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated secondary-bg text-right" role="progressbar"
-                style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>PHP</h6> 
-        <h6>70%</h6>
-        </div>
-          <div class="progress mb-2"> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated secondary-bg text-right" role="progressbar"
-                style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>Wordpress/CMS</h6> 
-        <h6>75%</h6>
-        </div>
-          <div class="progress mb-2"> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated secondary-bg text-right" role="progressbar"
-                style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>Bootstrap 4</h6> 
-        <h6>90%</h6>
-        </div>
-          <div class="progress mb-2"> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated secondary-bg text-right" role="progressbar"
-                style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>jQuery</h6> 
-        <h6>70%</h6>
-        </div>
-          <div class="progress mb-2 "> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated secondary-bg text-right" role="progressbar"
-                style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>Ajax & Json</h6> 
-        <h6>90%</h6>
-        </div>
-          <div class="progress mb-2 "> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated  text-right secondary-bg" role="progressbar"
-                style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="d-flex justify-content-between">
-          <h6>Git & Github</h6> 
-        <h6>90%</h6>
-        </div>
-          <div class="progress mb-2 "> 
-            <div class="progress-bar progress-bar-striped progress-bar-animated  text-right secondary-bg" role="progressbar"
-                style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-          
-
+          <div class="progress mb-2">
+            <div
+              class="progress-bar html secondary-bg text-right"
+              role="progressbar"
+              style="width: 95%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>CSS3 & SASS</h6>
+            <h6>95%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar css secondary-bg text-right"
+              role="progressbar"
+              style="width: 95%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>javascript</h6>
+            <h6>70%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar js secondary-bg text-right"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>PHP</h6>
+            <h6>70%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar php secondary-bg text-right"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>Wordpress/CMS</h6>
+            <h6>80%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar wordpress secondary-bg text-right"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>Bootstrap 4</h6>
+            <h6>90%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar BAG secondary-bg text-right"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>jQuery</h6>
+            <h6>70%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar jquery secondary-bg text-right"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>Ajax & Json</h6>
+            <h6>90%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar BAG text-right secondary-bg"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <h6>Git & Github</h6>
+            <h6>90%</h6>
+          </div>
+          <div class="progress mb-2">
+            <div
+              class="progress-bar BAG text-right secondary-bg"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
         </div>
       </section>
       <!-- Skill Section -->
-
-       <!-- Services Section -->
-       <div class="service-section py-5 px-2" id="services">
+      <!-- Services Section -->
+      <div class="service-section py-5 px-2" id="services">
         <h3 class="underline">Our Services</h3>
-       <div class="row mt-5">
-        <div class="col-md-4">
-          <div class="box text-center">
-            <div class="box-icon">
-              <i class="fas fa-desktop  fa-2x"></i>
+
+        <div class="row mt-5 mx-2">
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="box text-center"
+              data-aos="flip-up"
+              data-aos-delay="100"
+            >
+              <div class="box-icon">
+                <i class="fas fa-desktop fa-2x"></i>
+              </div>
+              <h5 class="box-title">Web Design</h5>
+              <p class="box-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                et adipisci expedita distinctio lorem the end Lorem ipsum dolor
+                sit amet Lorem, ipsum dolor..
+              </p>
             </div>
-            <h5 class="box-title mt-2">
-              Web Development
-            </h5>
-            <p class="box-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et adipisci expedita distinctio lorem the end Lorem ipsum dolor sit amet Lorem, ipsum dolor..
-            </p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="box text-center"
+              data-aos="flip-up"
+              data-aos-delay="200"
+            >
+              <div class="box-icon">
+                <i class="fas fa-code fa-2x"></i>
+              </div>
+              <h5 class="box-title">Web Development</h5>
+              <p class="box-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                et adipisci expedita distinctio lorem the end Lorem ipsum, dolor
+                sit amet ..
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-sm-6"
+            data-aos="flip-up"
+            data-aos-delay="300"
+          >
+            <div class="box text-center">
+              <div class="box-icon">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+              </div>
+              <h5 class="box-title">Responsive Design</h5>
+              <p class="box-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                et adipisci expedita distinctio lorem the end Lorem ipsum dolor
+                sit amet consectetur .
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="box text-center"
+              data-aos="flip-up"
+              data-aos-delay="400"
+            >
+              <div class="box-icon">
+                <i class="fab fa-wordpress fa-2x"></i>
+              </div>
+              <h5 class="box-title">Wordpress Theme Design</h5>
+              <p class="box-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                et adipisci expedita distinctio lorem the end Lorem ipsum dolor
+                sit amet Lorem, ipsum dolor..
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="box text-center"
+              data-aos="flip-up"
+              data-aos-delay="500"
+            >
+              <div class="box-icon">
+                <i class="fas fa-laptop-code fa-2x"></i>
+              </div>
+              <h5 class="box-title">Wordpress Development</h5>
+              <p class="box-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                et adipisci expedita distinctio lorem the end Lorem ipsum, dolor
+                sit amet ..
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="box text-center"
+              data-aos="flip-up"
+              data-aos-delay="600"
+            >
+              <div class="box-icon">
+                <i class="fab fa-microsoft fa-2x"></i>
+              </div>
+              <h5 class="box-title">MS Office Expert</h5>
+              <p class="box-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                et adipisci expedita distinctio lorem the end Lorem ipsum dolor
+                sit amet consectetur .
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="box text-center">
-            <div class="box-icon">
-              <i class="fas fa-desktop  fa-2x"></i>
+      </div>
+      <!-- Services Section -->
+      <!-- Contact Section -->
+      <div class="contact-section py-4 px-2" id="contact">
+        <h3 class="underline">Contact me</h3>
+
+        <div class="row mt-5 pb-5 px-2">
+          <div class="col-md-5 col-sm-6">
+            <div
+              class="contact-box1 ml-2 py-4"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <div class="location ml-4">
+                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                <span> &nbsp;&nbsp;Location</span>
+                <address>Markuli,Sylhet,Bangladesh</address>
+              </div>
+              <div class="email ml-4">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <span> &nbsp;&nbsp;Email</span>
+                <p>www.mithudas77@gmail.com</p>
+              </div>
+              <div class="call ml-4">
+                <a href="#"><i class="fas fa-phone"></i></a>
+                <span> &nbsp;&nbsp;Call</span>
+                <p>+88018-11797089</p>
+              </div>
+              <div class="website ml-4">
+                <a href="#"><i class="fas fa-laptop-code"></i></a>
+                <span> &nbsp;&nbsp;Website</span>
+                <p>www.webDeveloperMithu.pro</p>
+              </div>
             </div>
-            <h5 class="box-title mt-2">
-              Web Development
-            </h5>
-            <p class="box-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et adipisci expedita distinctio lorem the end Lorem ipsum, dolor sit amet ..
-            </p>
+          </div>
+          <div class="col-md-7 col-sm-6">
+            <div
+              class="contact-box2 py-4"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <form action="welcome.php" method="post">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    id="name"
+                    placeholder="your name..."
+                    required
+                  />
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control mb-3"
+                    id="email"
+                    placeholder="your email..."
+                    required
+                  />
+                  <label for="msg">Message</label>
+                  <textarea
+                    class="form-control mb-3"
+                    id="msg"
+                    placeholder="what's on your mind ?"
+                    rows="3"
+                    required
+                  ></textarea>
+                  <button type="submit" class="btn tertiary-bg text-white">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="box text-center">
-            <div class="box-icon">
-              <i class="fas fa-desktop  fa-2x"></i>
-            </div>
-            <h5 class="box-title mt-2">
-              Web Development
-            </h5>
-            <p class="box-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et adipisci expedita distinctio lorem the end Lorem ipsum dolor sit amet consectetur .
-            </p>
-          </div>
-        </div>
-       </div>
-       <div class="row mt-3">
-        <div class="col-md-4">
-          <div class="box text-center">
-            <div class="box-icon">
-              <i class="fas fa-desktop  fa-2x"></i>
-            </div>
-            <h5 class="box-title mt-2">
-              Web Development
-            </h5>
-            <p class="box-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et adipisci expedita distinctio lorem the end Lorem ipsum dolor sit amet Lorem, ipsum dolor..
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box text-center">
-            <div class="box-icon">
-              <i class="fas fa-desktop  fa-2x"></i>
-            </div>
-            <h5 class="box-title mt-2">
-              Web Development
-            </h5>
-            <p class="box-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et adipisci expedita distinctio lorem the end Lorem ipsum, dolor sit amet ..
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="box text-center">
-            <div class="box-icon">
-              <i class="fas fa-desktop  fa-2x"></i>
-            </div>
-            <h5 class="box-title mt-2">
-              Web Development
-            </h5>
-            <p class="box-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat et adipisci expedita distinctio lorem the end Lorem ipsum dolor sit amet consectetur .
-            </p>
-          </div>
-        </div>
-       </div>
-       </div>
-       <!-- Services Section -->
-                 
+      </div>
+      <!-- Contact Section -->
+      <div class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+
+      <!--  Footer Section -->
+      <div class="footer text-center font-size-14 py-2">
+        <div>&copy; Copyright 2020. All Rights Reserved</div>
+        <div>Designed by <a href="#" class="secondary-text">Mithu</a></div>
+      </div>
+      <!--  Footer Section -->
     </main>
 
-    <!---------------------- Main Section ------------------>
-
-    <!-----------------------  javascript  ---------------------->
+    <!-- Main Section -->
+    <!--========  javascript =========-->
     <script src="./asset/vendor/js/jquery-3.4.1.min.js"></script>
     <script src="./asset/vendor/js/bootstrap.min.js"></script>
     <script src="./asset/vendor/js/typed.js"></script>
+    <script src="./asset/vendor/js/aos.js"></script>
     <!-- Counter Up -->
     <script src="./asset/vendor/js/jquery.counterup.min.js"></script>
     <script src="./asset/vendor/js/jquery.waypoints.min.js"></script>
+    <!-- Browser Compability -->
+    <script src="./asset/vendor/js/respond.min.js"></script>
+    <script src="./asset/vendor/js/html5shiv.min.js"></script>
+    <script src="./asset/vendor/js/selectivizr.js"></script>
     <!-- Custom JS -->
     <script src="./main.js"></script>
   </body>

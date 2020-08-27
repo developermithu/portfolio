@@ -36,9 +36,13 @@
   font-size: 36px;
 }
 
+//  color
 .secondary-text {
   color: $secondary-color !important;
 }
 .secondary-bg {
   background: $secondary-color !important;
+}
+.tertiary-bg {
+  background: $tertiary-color !important;
 }

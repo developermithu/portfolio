@@ -2,40 +2,53 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
-  font-family: "domine", cursive;
+  font-family: "opensans" cursive  !important;
   overflow-x: hidden;
 }
+
 header {
   color: #fff;
 }
+
 li {
   list-style: none !important;
 }
+
 a {
   text-decoration: none !important;
   @extend .easeOut;
 }
+
 a:hover {
   cursor: pointer;
 }
+
+button:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "roboto", cursive;
+  font-family: "roboto", cursive !important;
 }
+
 .underline {
   position: relative;
 }
+
 .underline::before {
   content: " ";
   position: absolute;
@@ -44,4 +57,48 @@ h6 {
   bottom: 0;
   top: 38px;
   background: $secondary-color;
+}
+
+.mybtn {
+  border: 2px solid #007bff;
+  padding: 10px 35px;
+  border-radius: 6px;
+  color: #000;
+  font-family: $roboto;
+  position: relative;
+  z-index: 3;
+}
+
+.mybtn::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #007bff;
+  transition: 0.5s;
+  z-index: -3;
+}
+.mybtn:hover::before {
+  width: 100%;
+}
+.mybtn:hover {
+  color: #fff !important;
+}
+
+.scroll-up-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 30px;
+  padding: 5px 10px;
+  background: #18d26e;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 0.5s ease-out;
+  display: none;
+}
+.scroll-up-btn:hover {
+  background: blue;
+  cursor: pointer;
 }
