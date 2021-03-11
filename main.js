@@ -1,12 +1,10 @@
 $(document).ready(function () {
-  //=======  Mobile Menu Button  ======//
 
   //=======  Typed Js  ======//
   var typed = new Typed("#typed", {
     strings: [
-      "Web Designer",
-      "Web Developer",
-      "Wordpress Designer",
+      "Full-Stack Web Developer",
+      "Wordpress Expert",
       "Freelancer",
     ],
     typeSpeed: 50,
@@ -14,10 +12,11 @@ $(document).ready(function () {
     loop: true,
   });
 
-  //=======  Counter Up  ======//
+  //=======  Scroll Up Button ======//
   $(".number").counterUp({ delay: 10, time: 2000 });
 
-  //=======  Counter Up  ======//
+
+  //=======  Smooth Animation  ======//
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $(".scroll-up-btn").fadeIn();
@@ -30,13 +29,21 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 500);
   });
 
-  //=======  Counter Up  ======//
+
+  //=======  Animate On Scroll  ======//
   AOS.init();
 
-});
+
+  //======= For Loading Animation =======//
+  setTimeout(function(){
+    $('.loader-bg').fadeToggle();
+  },2000);
+
+
+}); //document end 
+
 
 // =======  smooth scroll for IE / Safari / Ege ========//
-
 $("a").on("click", function (event) {
   if (this.hash != "") {
     event.preventDefault();
@@ -53,11 +60,18 @@ $("a").on("click", function (event) {
   }
 });
 
-// =======  Humburger Mobile Menu ========//
+
+//=======  Humburger Mobile Menu ========//
 function openNav() {
   document.getElementById("mySidenav").style.width = "60%";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+}
+
+
+ function toggleMenu(){
+document.getElementById('header').classList.toggle('sidebarHide');
+document.getElementById('main').style.width = '100%';
 }

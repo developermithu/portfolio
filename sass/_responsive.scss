@@ -2,7 +2,17 @@
 
 /*=========  Small Leftop  ========*/
 @media screen and (max-width: 1024px) {
-  .mobileMenu{
+  .hero-section,
+  .about-section,
+  .counter-section,
+  .skill-section,
+  .service-section,
+  .project-section,
+  .contact-section {
+    overflow-x: hidden;
+  }
+
+  .mobileMenu {
     display: block;
   }
 
@@ -10,27 +20,44 @@
     display: none;
   }
   main {
-    width: 100%;
+    width: 100vw;
   }
   .hero-title {
     top: 50% !important;
-    left: 20% !important;
+    left: 25% !important;
     transform: translate(-50%, -50%) !important;
     h1 {
       font-size: 55px !important;
     }
   }
+
+  .openNav {
+    position: fixed;
+    top: 5px;
+    right: 30px;
+  }
+
 }
 
 /*=========  Tablet Device  ========*/
 @media screen and (max-width: 768px) {
+  .hero-section,
+  .about-section,
+  .counter-section,
+  .skill-section,
+  .service-section,
+  .project-section,
+  .contact-section {
+    overflow-x: hidden;
+  }
+
   html {
     font-size: 90%;
   }
 
   .hero-title {
     top: 50% !important;
-    left: 22% !important;
+    left: 26% !important;
     h1 {
       font-size: 48px !important;
     }
@@ -67,13 +94,48 @@
     bottom: 12px;
     right: 12px;
   }
+
+  .openNav {
+    position: fixed;
+    top: 5px;
+    right: 30px;
+  }
+  
+  .box {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .hero-title {
+    left: 35% !important;
+  }
+  .contact-box2{
+    margin-top: 15px;
+  }
 }
 
 /*=========  Large Mobile  ========*/
 @media screen and (max-width: 480px) {
+  .hero-section,
+  .about-section,
+  .counter-section,
+  .skill-section,
+  .service-section,
+  .project-section,
+  .contact-section {
+    overflow-x: hidden;
+  }
+
+  .openNav {
+    position: fixed;
+    top: 5px;
+    right: 30px;
+  }
+
   .hero-title {
     top: 38% !important;
-    left: 30% !important;
+    left: 35% !important;
     h1 {
       font-size: 44px !important;
     }
@@ -97,7 +159,23 @@
 }
 
 /*=========  Small Mobile  ========*/
+@media screen and (max-width: 375px) {
+  .hero-title {
+    left: 38% !important;
+  }
+}
+
 @media screen and (max-width: 320px) {
+  .hero-section,
+  .about-section,
+  .counter-section,
+  .skill-section,
+  .service-section,
+  .project-section,
+  .contact-section {
+    overflow-x: hidden;
+  }
+
   html {
     font-size: 75%;
   }
@@ -143,15 +221,19 @@
   }
 
   .contact-box1 {
- span{
-   font-size: 15px !important;
- }
-      a {
-        width: 35px !important;
-        height: 35px !important;
-        i {
-          margin-top: 12px !important;
-        }
+    span {
+      font-size: 15px !important;
+    }
+    a {
+      width: 35px !important;
+      height: 35px !important;
+      i {
+        margin-top: 12px !important;
       }
+    }
+  }
+
+  .project-section h6 {
+    margin-top: 25px !important;
   }
 }
