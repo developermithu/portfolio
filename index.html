@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mithu Das - A Full-Stack Webdeveloper</title>
 
+    <meta property="og:title" content="Mithu Das - A Full-Stack Webdeveloper" /> 
+    <meta property="og:url" content="https://developermithu.netlify.app" />
+    <meta property="og:type" content="Portfolio" />
+    <meta
+      property="og:description"
+      content="Mithu Das - A Full-Stack Webdeveloper."
+    />
+    <meta
+      property="og:image"
+      content="./asset/vendor/img/mithu.jpg"
+    />
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./asset/all.css" />
@@ -15,118 +27,131 @@
     <!-- custom css -->
     <link rel="stylesheet" href="./main.css" />
     <style>
- .header .toggleMenu{
-   position: absolute;
-   top: 15px;
-   left: 370px;
- }
- .header .toggleMenu:hover{
-   cursor: pointer;
- }
- .header .toggleMenu span{
-   width: 30px;
-   height: 5px;
-   background: #000 !important;
-   margin: 5px;
-   display: block;
-   transition: .3s;
- }
- .header .toggleMenu:hover span{
-   background: #eee !important;
- }
-#header{
-  left: 0px;
-  transition: 1.2s;
-}
-.sidebarHide{
-left: -350px !important;
-}
-
+      .header .toggleMenu {
+        position: absolute;
+        top: 15px;
+        left: 370px;
+      }
+      .header .toggleMenu:hover {
+        cursor: pointer;
+      }
+      .header .toggleMenu span {
+        width: 30px;
+        height: 5px;
+        background: #000 !important;
+        margin: 5px;
+        display: block;
+        transition: 0.3s;
+      }
+      .header .toggleMenu:hover span {
+        background: #eee !important;
+      }
+      #header {
+        left: 0px;
+        transition: 1.2s;
+      }
+      .sidebarHide {
+        left: -350px !important;
+      }
     </style>
   </head>
   <body>
-    
     <!-- squre loading animation -->
     <div class="loader-bg">
       <div class="loader"></div>
     </div>
 
     <!-- Mobile Menu -->
-      <div class="mobileMenu">
+    <div class="mobileMenu">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
 
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-          <div class=" header-top py-5">
-            <a onclick="closeNav()" href="index.html">
-             <div class="header-img my-3">
-               <img
-                 src="./asset/vendor/img/mithu.jpg"
-                 alt="logo"
-                 class="img-fluid"
-             />
-           </div>
-            </a>
-               <div class="header-title">
-                 <a onclick="closeNav()" href="index.html"><h3>Mithu <span class="secondary-text">Das</span></h3></a>
-               </div>
-               <div class="social-icon" >
-                 <span
-                   ><a onclick="closeNav()" href="https://www.facebook.com/Mithu105"><i class="fab fa-facebook-f" target="blank"></i></a
-                 ></span>
-                 <span
-                   ><a onclick="closeNav()" href="#"><i class="fab fa-twitter" target="blank"></i></a
-                 ></span>
-                 <span
-                   ><a onclick="closeNav()" href="https://www.linkedin.com/in/mithu105/"><i class="fab fa-linkedin" target="blank"></i></a
-                 ></span>
-                 <span
-                   ><a onclick="closeNav()" href="https://www.instagram.com/mithudas6015"><i class="fab fa-instagram" target="blank"></i></a
-                 ></span>
-               </div>
-             </div>
-             <!-- navbar -->
-      <nav>
-        <ul>
-          <li>
-            <a onclick="closeNav()" href="#"
-              ><span class="active"><i class="fas fa-home"></i></span>&nbsp;
-              Home</a
+        <div class="header-top py-5">
+          <a onclick="closeNav()" href="index.html">
+            <div class="header-img my-3">
+              <img
+                src="./asset/vendor/img/mithu.jpg"
+                alt="developermithu"
+                class="img-fluid"
+              />
+            </div>
+          </a>
+          <div class="header-title">
+            <a onclick="closeNav()" href="index.html"
+              ><h3>Mithu <span class="secondary-text">Das</span></h3></a
             >
-          </li>
-          <li>
-            <a onclick="closeNav()" href="#About"><i class="fas fa-user"></i> &nbsp;About</a>
-          </li>
-          <li>
-            <a onclick="closeNav()" href="#About"><i class="fas fa-file-alt"></i> &nbsp; Resume</a>
-          </li>
-          <li>
-            <a onclick="closeNav()" href="#project">
-              <i class="fas fa-user-graduate"></i> &nbsp; Portfolio</a
-            >
-          </li>
-          <li>
-            <a onclick="closeNav()" href="#services"><i class="fas fa-server"></i> &nbsp;Services</a>
-          </li>
-          <li>
-            <a onclick="closeNav()" href="#contact"><i class="fas fa-envelope"></i> &nbsp;Contact</a>
-          </li>
-        </ul>
-      </nav>
-
+          </div>
+          <div class="social-icon">
+            <span
+              ><a onclick="closeNav()" href="https://www.facebook.com/Mithu105"
+                ><i class="fab fa-facebook-f" target="blank"></i></a
+            ></span>
+            <span
+              ><a onclick="closeNav()" href="#"
+                ><i class="fab fa-twitter" target="blank"></i></a
+            ></span>
+            <span
+              ><a
+                onclick="closeNav()"
+                href="https://www.linkedin.com/in/mithu105/"
+                ><i class="fab fa-linkedin" target="blank"></i></a
+            ></span>
+            <span
+              ><a
+                onclick="closeNav()"
+                href="https://www.instagram.com/mithudas6015"
+                ><i class="fab fa-instagram" target="blank"></i></a
+            ></span>
+          </div>
         </div>
-
-        <div class="openNav">
-          <span onclick="openNav()">&#9776;</span>
+        <!-- navbar -->
+        <nav>
+          <ul>
+            <li>
+              <a onclick="closeNav()" href="#"
+                ><span class="active"><i class="fas fa-home"></i></span>&nbsp;
+                Home</a
+              >
+            </li>
+            <li>
+              <a onclick="closeNav()" href="#About"
+                ><i class="fas fa-user"></i> &nbsp;About</a
+              >
+            </li>
+            <li>
+              <a onclick="closeNav()" href="#About"
+                ><i class="fas fa-file-alt"></i> &nbsp; Resume</a
+              >
+            </li>
+            <li>
+              <a onclick="closeNav()" href="#project">
+                <i class="fas fa-user-graduate"></i> &nbsp; Portfolio</a
+              >
+            </li>
+            <li>
+              <a onclick="closeNav()" href="#services"
+                ><i class="fas fa-server"></i> &nbsp;Services</a
+              >
+            </li>
+            <li>
+              <a onclick="closeNav()" href="#contact"
+                ><i class="fas fa-envelope"></i> &nbsp;Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
 
+      <div class="openNav">
+        <span onclick="openNav()">&#9776;</span>
       </div>
+    </div>
     <!-- Mobile Menu -->
-
 
     <!-- Header Section -->
     <header class="header" id="header">
-
       <div class="toggleMenu" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -134,30 +159,35 @@ left: -350px !important;
       </div>
 
       <div class="header-top py-3">
-     <a href="index.html">
-      <div class="header-img my-3" data-aos="fade-in" data-aos-delay="100">
-        <img
-          src="./asset/vendor/img/mithu.jpg "
-          alt="logo"
-          class="img-fluid"
-      />
-    </div>
-     </a>
+        <a href="index.html">
+          <div class="header-img my-3" data-aos="fade-in" data-aos-delay="100">
+            <img
+              src="./asset/vendor/img/mithu.jpg "
+              alt="logo"
+              class="img-fluid"
+            />
+          </div>
+        </a>
         <div class="header-title" data-aos="fade-in" data-aos-delay="200">
-          <a href="index.html"><h3>Mithu <span class="secondary-text">Das</span></h3></a>
+          <a href="index.html"
+            ><h3>Mithu <span class="secondary-text">Das</span></h3></a
+          >
         </div>
         <div class="social-icon" data-aos="fade-in" data-aos-delay="300">
           <span
-            ><a href="https://www.facebook.com/Mithu105"><i class="fab fa-facebook-f" target="blank"></i></a
+            ><a href="https://www.facebook.com/Mithu105"
+              ><i class="fab fa-facebook-f" target="blank"></i></a
           ></span>
           <span
             ><a href="#"><i class="fab fa-twitter" target="blank"></i></a
           ></span>
           <span
-            ><a href="https://www.linkedin.com/in/mithu105/"><i class="fab fa-linkedin" target="blank"></i></a
+            ><a href="https://www.linkedin.com/in/mithu105/"
+              ><i class="fab fa-linkedin" target="blank"></i></a
           ></span>
           <span
-            ><a href="https://www.instagram.com/mithudas6015"><i class="fab fa-instagram" target="blank"></i></a
+            ><a href="https://www.instagram.com/mithudas6015"
+              ><i class="fab fa-instagram" target="blank"></i></a
           ></span>
         </div>
       </div>
@@ -201,7 +231,6 @@ left: -350px !important;
       <!--  Footer Section -->
     </header>
     <!-- Header Section -->
-
 
     <!--========== Main Section Start ============ -->
     <main id="main">
@@ -298,7 +327,9 @@ left: -350px !important;
                     >Download Cv &nbsp;<span
                       ><i class="fas fa-file-download"></i></span
                   ></a>
-                  <a href="mailto:www.mithudas77@gmail.com" class="mybtn ml-3">Hire me</a>
+                  <a href="mailto:www.mithudas77@gmail.com" class="mybtn ml-3"
+                    >Hire me</a
+                  >
                 </div>
               </div>
             </div>
@@ -595,10 +626,19 @@ left: -350px !important;
         <div class="row mt-3 mb-3 mx-2">
           <div class="col-md-6 col-sm-6">
             <div class="single-project">
-              <img src="./asset/vendor/img/project/blogger.jpg" alt="project" class="img-fluid">
+              <img
+                src="./asset/vendor/img/project/blogger.jpg"
+                alt="project"
+                class="img-fluid"
+              />
               <div class="middle">
                 <div class="view">
-                  <a href="https://mithu105.github.io/blooger/" target="blank" title="Blog Website"><i class="fas fa-eye fa-4x   "></i></a>
+                  <a
+                    href="https://mithu105.github.io/blooger/"
+                    target="blank"
+                    title="Blog Website"
+                    ><i class="fas fa-eye fa-4x"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -606,10 +646,19 @@ left: -350px !important;
 
           <div class="col-md-6 col-sm-6">
             <div class="single-project">
-              <img src="./asset/vendor/img/project/php4.png" alt="project" class="img-fluid">
+              <img
+                src="./asset/vendor/img/project/php4.png"
+                alt="project"
+                class="img-fluid"
+              />
               <div class="middle">
                 <div class="view">
-                  <a href="http://webdevelopermithu.epizy.com/" target="blank" title="Php Dynamic Website"><i class="fas fa-eye fa-4x   "></i></a>
+                  <a
+                    href="http://webdevelopermithu.epizy.com/"
+                    target="blank"
+                    title="Php Dynamic Website"
+                    ><i class="fas fa-eye fa-4x"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -617,10 +666,19 @@ left: -350px !important;
 
           <div class="col-md-6 col-sm-6 mt-3">
             <div class="single-project">
-              <img src="./asset/vendor/img/project/buisness.png" alt="project" class="img-fluid">
+              <img
+                src="./asset/vendor/img/project/buisness.png"
+                alt="project"
+                class="img-fluid"
+              />
               <div class="middle">
                 <div class="view">
-                  <a href="https://mithu105.github.io/buisness/" target="blank" title="Buisness Website"><i class="fas fa-eye fa-4x   "></i></a>
+                  <a
+                    href="https://mithu105.github.io/buisness/"
+                    target="blank"
+                    title="Buisness Website"
+                    ><i class="fas fa-eye fa-4x"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -628,15 +686,23 @@ left: -350px !important;
 
           <div class="col-md-6 col-sm-6 mt-3">
             <div class="single-project">
-              <img src="./asset/vendor/img/project/newspapper.png" alt="project" class="img-fluid">
+              <img
+                src="./asset/vendor/img/project/newspapper.png"
+                alt="project"
+                class="img-fluid"
+              />
               <div class="middle">
                 <div class="view">
-                  <a href="https://mithu105.github.io/newspapper.github.io/" target="blank" title="Newspapper Website"><i class="fas fa-eye fa-4x   "></i></a>
+                  <a
+                    href="https://mithu105.github.io/newspapper.github.io/"
+                    target="blank"
+                    title="Newspapper Website"
+                    ><i class="fas fa-eye fa-4x"></i
+                  ></a>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
       <!-- Projects Section -->
@@ -653,12 +719,16 @@ left: -350px !important;
               data-aos-delay="100"
             >
               <div class="location ml-4">
-                <a href="https://goo.gl/maps/EmwfGLthC3wP9B3k7"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="https://goo.gl/maps/EmwfGLthC3wP9B3k7"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></a>
                 <span> &nbsp;&nbsp;Location</span>
                 <address>Markuli,Sylhet,Bangladesh</address>
               </div>
               <div class="email ml-4">
-                <a href="mailto:www.mithudas77@gmail.com&subject=Feedback"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:www.mithudas77@gmail.com&subject=Feedback"
+                  ><i class="fas fa-envelope"></i
+                ></a>
                 <span> &nbsp;&nbsp;Email</span>
                 <p>www.mithudas77@gmail.com</p>
               </div>
@@ -730,7 +800,6 @@ left: -350px !important;
 
     <!--========== Main Section End ==========-->
 
-
     <!--========  javascript =========-->
     <script src="./asset/vendor/js/jquery-3.4.1.min.js"></script>
     <script src="./asset/vendor/js/bootstrap.min.js"></script>
@@ -745,6 +814,5 @@ left: -350px !important;
     <script src="./asset/vendor/js/selectivizr.js"></script>
     <!-- Custom JS -->
     <script src="./main.js"></script>
-
   </body>
 </html>
