@@ -3,7 +3,7 @@
   display: none;
 
   .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
     z-index: 5;
@@ -13,122 +13,119 @@
     overflow-x: hidden;
     transition: 0.5s;
 
-   .closebtn {
+    .closebtn {
       position: absolute;
       top: 0;
-      right: 25px ;
+      right: 25px;
       font-size: 50px;
-     color: #fff;
+      color: #fff;
     }
 
     .header-top {
-        text-align: center;
-    
-        .header-title{
-          a{
-            color: #fff;
-          }
+      text-align: center;
+
+      .header-title {
+        a {
+          color: #fff;
         }
-    
-        .header-img {
-          width: 100%;
+      }
+
+      .header-img {
+        width: 100%;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+          content: " ";
+          position: absolute;
+          width: 115px;
+          height: 115px;
           border-radius: 50%;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-    
-          &::after {
-            content: " ";
-            position: absolute;
-            width: 115px;
-            height: 115px;
-            border-radius: 50%;
-            background: transparent;
-            border: 2px dashed $secondary-color;
-            -webkit-animation: animateMe 10s linear infinite;
-                    animation: animateMe 10s linear infinite;
-    
-            @-webkit-keyframes animateMe {
-              0% {
-                transform: scale(1) rotate(0deg);
-              }
-              100% {
-                transform: scale(1) rotate(360deg);
-              }
+          background: transparent;
+          border: 2px dashed $secondary-color;
+          -webkit-animation: animateMe 10s linear infinite;
+          animation: animateMe 10s linear infinite;
+
+          @-webkit-keyframes animateMe {
+            0% {
+              transform: scale(1) rotate(0deg);
             }
-    
-            @keyframes animateMe {
-              0% {
-                transform: scale(1) rotate(0deg);
-              }
-              100% {
-                transform: scale(1) rotate(360deg);
-              }
+            100% {
+              transform: scale(1) rotate(360deg);
             }
           }
-    
-          img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+
+          @keyframes animateMe {
+            0% {
+              transform: scale(1) rotate(0deg);
+            }
+            100% {
+              transform: scale(1) rotate(360deg);
+            }
           }
         }
-    
-        .social-icon {
-          span {
-            margin: 5px;
-            a {
-              width: 36px;
-              height: 36px;
-              border-radius: 50%;
-              background: #212431;
-              display: inline-block;
-              color: $secondary-color;
-    
-              &:hover {
-                background: $secondary-color;
-                color: #fff;
-              }
-    
-              i {
-                margin-top: 10px;
-              }
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+      }
+
+      .social-icon {
+        span {
+          margin: 5px;
+          a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #212431;
+            display: inline-block;
+            color: $secondary-color;
+
+            &:hover {
+              background: $secondary-color;
+              color: #fff;
+            }
+
+            i {
+              margin-top: 10px;
             }
           }
         }
       }
+    }
 
-      nav {
-        padding-top: 25px;
-        ul {
-            margin-left: 60px;
-          li {
-            margin: 18px 0;
-            &:last-child{
-              margin-bottom:80px ;
+    nav {
+      padding-top: 25px;
+      ul {
+        margin-left: 60px;
+        li {
+          margin: 18px 0;
+          &:last-child {
+            margin-bottom: 80px;
+          }
+
+          a {
+            font-size: 20px;
+            font-family: $roboto;
+            font-weight: 300;
+            color: #bbb !important;
+
+            &:hover {
+              color: #fff !important;
             }
-            
-            a {
-              font-size: 20px;
-              font-family: $roboto;
-              font-weight: 300;
-              color: #bbb !important;
-    
-              &:hover {
-                color: #fff !important;
-              }
-              &:hover i {
-                color: $secondary-color !important;
-              }
-              i {
-              }
+            &:hover i {
+              color: $secondary-color !important;
             }
+
           }
         }
       }
-    
-
+    }
   }
 
   .openNav {
@@ -137,11 +134,9 @@
     right: 30px;
     cursor: pointer;
     font-size: 35px;
-  z-index: 3;
+    z-index: 3;
     span {
       color: #000;
     }
   }
 }
-
-

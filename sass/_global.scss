@@ -10,8 +10,9 @@ html {
 }
 
 body {
-  font-family: "opensans" cursive  !important;
-  overflow-x: hidden;
+  font-family: "roboto" cursive !important;
+  overflow-x: hidden !important;
+
 }
 
 header {
@@ -77,6 +78,9 @@ h6 {
   height: 100%;
   width: 0;
   background: #007bff;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   z-index: -3;
 }
@@ -95,7 +99,10 @@ h6 {
   background: #18d26e;
   color: #fff;
   border-radius: 3px;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   display: none;
 }
 .scroll-up-btn:hover {

@@ -14,8 +14,42 @@
     <link rel="stylesheet" href="./asset/css/normalize.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="./main.css" />
+    <style>
+ .header .toggleMenu{
+   position: absolute;
+   top: 15px;
+   left: 370px;
+ }
+ .header .toggleMenu:hover{
+   cursor: pointer;
+ }
+ .header .toggleMenu span{
+   width: 30px;
+   height: 5px;
+   background: #000 !important;
+   margin: 5px;
+   display: block;
+   transition: .3s;
+ }
+ .header .toggleMenu:hover span{
+   background: #eee !important;
+ }
+#header{
+  left: 0px;
+  transition: 1.2s;
+}
+.sidebarHide{
+left: -350px !important;
+}
+
+    </style>
   </head>
   <body>
+    
+    <!-- squre loading animation -->
+    <div class="loader-bg">
+      <div class="loader"></div>
+    </div>
 
     <!-- Mobile Menu -->
       <div class="mobileMenu">
@@ -38,16 +72,16 @@
                </div>
                <div class="social-icon" >
                  <span
-                   ><a onclick="closeNav()" href="#"><i class="fab fa-facebook-f" target="blank"></i></a
+                   ><a onclick="closeNav()" href="https://www.facebook.com/Mithu105"><i class="fab fa-facebook-f" target="blank"></i></a
                  ></span>
                  <span
                    ><a onclick="closeNav()" href="#"><i class="fab fa-twitter" target="blank"></i></a
                  ></span>
                  <span
-                   ><a onclick="closeNav()" href="#"><i class="fab fa-youtube" target="blank"></i></a
+                   ><a onclick="closeNav()" href="https://www.linkedin.com/in/mithu105/"><i class="fab fa-linkedin" target="blank"></i></a
                  ></span>
                  <span
-                   ><a onclick="closeNav()" href="#"><i class="fab fa-instagram" target="blank"></i></a
+                   ><a onclick="closeNav()" href="https://www.instagram.com/mithudas6015"><i class="fab fa-instagram" target="blank"></i></a
                  ></span>
                </div>
              </div>
@@ -61,13 +95,13 @@
             >
           </li>
           <li>
-            <a onclick="closeNav()" href="#"><i class="fas fa-user"></i> &nbsp;About</a>
+            <a onclick="closeNav()" href="#About"><i class="fas fa-user"></i> &nbsp;About</a>
           </li>
           <li>
-            <a onclick="closeNav()" href="#skill"><i class="fas fa-file-alt"></i> &nbsp; Resume</a>
+            <a onclick="closeNav()" href="#About"><i class="fas fa-file-alt"></i> &nbsp; Resume</a>
           </li>
           <li>
-            <a onclick="closeNav()" href="#">
+            <a onclick="closeNav()" href="#project">
               <i class="fas fa-user-graduate"></i> &nbsp; Portfolio</a
             >
           </li>
@@ -85,13 +119,20 @@
         <div class="openNav">
           <span onclick="openNav()">&#9776;</span>
       </div>
-    
+
       </div>
     <!-- Mobile Menu -->
 
 
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" id="header">
+
+      <div class="toggleMenu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <div class="header-top py-3">
      <a href="index.html">
       <div class="header-img my-3" data-aos="fade-in" data-aos-delay="100">
@@ -107,16 +148,16 @@
         </div>
         <div class="social-icon" data-aos="fade-in" data-aos-delay="300">
           <span
-            ><a href="#"><i class="fab fa-facebook-f" target="blank"></i></a
+            ><a href="https://www.facebook.com/Mithu105"><i class="fab fa-facebook-f" target="blank"></i></a
           ></span>
           <span
             ><a href="#"><i class="fab fa-twitter" target="blank"></i></a
           ></span>
           <span
-            ><a href="#"><i class="fab fa-youtube" target="blank"></i></a
+            ><a href="https://www.linkedin.com/in/mithu105/"><i class="fab fa-linkedin" target="blank"></i></a
           ></span>
           <span
-            ><a href="#"><i class="fab fa-instagram" target="blank"></i></a
+            ><a href="https://www.instagram.com/mithudas6015"><i class="fab fa-instagram" target="blank"></i></a
           ></span>
         </div>
       </div>
@@ -130,13 +171,13 @@
             >
           </li>
           <li data-aos="fade-right" data-aos-delay="500">
-            <a href="#"><i class="fas fa-user"></i> &nbsp;About</a>
+            <a href="#About"><i class="fas fa-user"></i> &nbsp;About</a>
           </li>
           <li data-aos="fade-right" data-aos-delay="600">
-            <a href="#skill"><i class="fas fa-file-alt"></i> &nbsp; Resume</a>
+            <a href="#About"><i class="fas fa-file-alt"></i> &nbsp; Resume</a>
           </li>
           <li data-aos="fade-right" data-aos-delay="700">
-            <a href="#">
+            <a href="#project">
               <i class="fas fa-user-graduate"></i> &nbsp; Portfolio</a
             >
           </li>
@@ -162,9 +203,8 @@
     <!-- Header Section -->
 
 
-
     <!--========== Main Section Start ============ -->
-    <main>
+    <main id="main">
       <!-- Hero Section -->
       <section class="hero-section" id="Home">
         <div class="wrapper"></div>
@@ -175,9 +215,9 @@
       </section>
 
       <!-- About Section -->
-      <section class="about-section py-5 px-2" id="About">
+      <section class="about-section py-5 px-4" id="About">
         <div data-aos="fade-right" data-aos-delay="100">
-          <h2 class="underline">About me</h2>
+          <h2 class="underline">About Me</h2>
           <p class="p1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             recusandae natus commodi ullam et adipisci? Obcaecati, maxime, quis
@@ -215,7 +255,7 @@
                 </p>
                 <p>
                   <span><i class="fas fa-chevron-right"></i></span>&nbsp;
-                  <b>Website : </b>21 www.mithu.pro
+                  <b>Website : </b> www.mithu.epizy.com
                 </p>
                 <p>
                   <span><i class="fas fa-chevron-right"></i></span>&nbsp;
@@ -258,16 +298,17 @@
                     >Download Cv &nbsp;<span
                       ><i class="fas fa-file-download"></i></span
                   ></a>
-                  <a href="#" class="mybtn ml-3">Hire me</a>
+                  <a href="mailto:www.mithudas77@gmail.com" class="mybtn ml-3">Hire me</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Counterup Section -->
       <div
-        class="counter-section py-5 px-2"
+        class="counter-section py-5 px-4"
         data-aos="zoom-in"
         data-aos-delay="100"
       >
@@ -299,8 +340,9 @@
         </div>
       </div>
       <!-- Counterup Section -->
+
       <!-- Skill Section -->
-      <section class="skill-section py-4 px-2" id="skill">
+      <section class="skill-section py-4 px-4" id="skill">
         <h3 class="underline">My Skill</h3>
         <div class="mt-5 px-5">
           <div class="d-flex justify-content-between">
@@ -432,8 +474,9 @@
         </div>
       </section>
       <!-- Skill Section -->
+
       <!-- Services Section -->
-      <div class="service-section py-5 px-2" id="services">
+      <div class="service-section py-5 px-4" id="services">
         <h3 class="underline">Our Services</h3>
 
         <div class="row mt-5 mx-2">
@@ -543,9 +586,64 @@
         </div>
       </div>
       <!-- Services Section -->
+
+      <!-- Projects Section -->
+      <section class="project-section py-4 px-4" id="project">
+        <h3 class="underline">Our Project</h3>
+        <h6 class="mt-3">Check out some of my projects...</h6>
+
+        <div class="row mt-3 mb-3 mx-2">
+          <div class="col-md-6 col-sm-6">
+            <div class="single-project">
+              <img src="./asset/vendor/img/project/blogger.jpg" alt="project" class="img-fluid">
+              <div class="middle">
+                <div class="view">
+                  <a href="https://mithu105.github.io/blooger/" target="blank" title="Blog Website"><i class="fas fa-eye fa-4x   "></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <div class="single-project">
+              <img src="./asset/vendor/img/project/php4.png" alt="project" class="img-fluid">
+              <div class="middle">
+                <div class="view">
+                  <a href="http://webdevelopermithu.epizy.com/" target="blank" title="Php Dynamic Website"><i class="fas fa-eye fa-4x   "></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 mt-3">
+            <div class="single-project">
+              <img src="./asset/vendor/img/project/buisness.png" alt="project" class="img-fluid">
+              <div class="middle">
+                <div class="view">
+                  <a href="https://mithu105.github.io/buisness/" target="blank" title="Buisness Website"><i class="fas fa-eye fa-4x   "></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 mt-3">
+            <div class="single-project">
+              <img src="./asset/vendor/img/project/newspapper.png" alt="project" class="img-fluid">
+              <div class="middle">
+                <div class="view">
+                  <a href="https://mithu105.github.io/newspapper.github.io/" target="blank" title="Newspapper Website"><i class="fas fa-eye fa-4x   "></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Projects Section -->
+
       <!-- Contact Section -->
-      <div class="contact-section py-4 px-2" id="contact">
-        <h3 class="underline">Contact me</h3>
+      <div class="contact-section py-4 px-4" id="contact">
+        <h3 class="underline">Contact Me</h3>
 
         <div class="row mt-5 pb-5 px-2">
           <div class="col-md-5 col-sm-6">
@@ -555,24 +653,24 @@
               data-aos-delay="100"
             >
               <div class="location ml-4">
-                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="https://goo.gl/maps/EmwfGLthC3wP9B3k7"><i class="fas fa-map-marker-alt"></i></a>
                 <span> &nbsp;&nbsp;Location</span>
                 <address>Markuli,Sylhet,Bangladesh</address>
               </div>
               <div class="email ml-4">
-                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:www.mithudas77@gmail.com&subject=Feedback"><i class="fas fa-envelope"></i></a>
                 <span> &nbsp;&nbsp;Email</span>
                 <p>www.mithudas77@gmail.com</p>
               </div>
               <div class="call ml-4">
-                <a href="#"><i class="fas fa-phone"></i></a>
+                <a href="tel:8801811797089"><i class="fas fa-phone"></i></a>
                 <span> &nbsp;&nbsp;Call</span>
                 <p>+88018-11797089</p>
               </div>
               <div class="website ml-4">
                 <a href="#"><i class="fas fa-laptop-code"></i></a>
                 <span> &nbsp;&nbsp;Website</span>
-                <p>www.webDeveloperMithu.pro</p>
+                <p>www.mithu.epizy.com</p>
               </div>
             </div>
           </div>

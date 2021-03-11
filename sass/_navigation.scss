@@ -1,6 +1,79 @@
 /*=============  Navigation  ============*/
 
-header {
+/*=============  Loading Animation  ============*/
+.loader-bg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999999;
+  background: linear-gradient(
+    rgba($tertiary-color, 0.6),
+      rgba($secondary-color, 0.6),
+      rgba(255, 255, 0, 0.4) 
+    ),
+    url(../asset/vendor/img/profile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.loader {
+  position: absolute;
+  border: 3px solid rgba(255, 255, 0, 0.9);
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: loading 1.5s linear infinite;
+}
+.loader::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 0, 0.9);
+  animation: loadingBG 1.5s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes loadingBG {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+/*=============  Header Part  ============*/
+#header {
   position: fixed;
   width: 300px;
   height: 100vh;
@@ -10,8 +83,8 @@ header {
   .header-top {
     text-align: center;
 
-    .header-title{
-      a{
+    .header-title {
+      a {
         color: #fff;
       }
     }
@@ -32,10 +105,12 @@ header {
         border-radius: 50%;
         background: transparent;
         border: 2px dashed $secondary-color;
-        -webkit-animation: animateMe 10s linear infinite;
-                animation: animateMe 10s linear infinite;
+        -webkit-animation: rotate 10s linear infinite;
+        -o-animation: rotate 10s linear infinite;
+        -moz-animation: rotate 10s linear infinite;
+        animation: rotate 10s linear infinite;
 
-        @-webkit-keyframes animateMe {
+        @-webkit-keyframes rotate {
           0% {
             transform: scale(1) rotate(0deg);
           }
@@ -44,7 +119,7 @@ header {
           }
         }
 
-        @keyframes animateMe {
+        @keyframes rotate {
           0% {
             transform: scale(1) rotate(0deg);
           }
@@ -91,7 +166,7 @@ header {
     ul {
       li {
         margin: 15px 0;
-        
+
         a {
           font-size: 20px;
           font-family: $roboto;
@@ -119,4 +194,3 @@ header {
     }
   }
 }
-
